@@ -1,10 +1,6 @@
 describe('Add elements to cart', () => {
      beforeEach(() =>{
-        cy.visit('/');
-        cy.get('input#user-name').type(Cypress.env('accepted_username'));
-        cy.get('input#password').type(Cypress.env('accepted_password'));
-        cy.get('input#login-button').click();
-        cy.get('div#shopping_cart_container').should('be.visible');
+        cy.login();
     })
     it('Verify that elements can be added to the cart', () =>{
         cy.get('button#add-to-cart-sauce-labs-backpack').click();

@@ -1,10 +1,6 @@
 describe('Login page', () => {
     it('Verify that a user can log into the page with valid credentials', () => {
-        cy.visit('/');
-        cy.get('input#user-name').type(Cypress.env('accepted_username'));
-        cy.get('input#password').type(Cypress.env('accepted_password'));
-        cy.get('input#login-button').click();
-        cy.get('div#shopping_cart_container').should('be.visible');
+        cy.login();
     })
     it('Verify username field only accept values set on Accepted user name', () => {
         cy.visit('/');
