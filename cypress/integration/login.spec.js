@@ -46,4 +46,6 @@ describe('Login page', () => {
         cy.get('input#login-button').click();
         cy.get('div#shopping_cart_container').should('be.visible');
     })
+
 });
+

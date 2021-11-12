@@ -59,4 +59,6 @@ describe('Purchase elements added to the cart', () => {
         cy.get('button#cancel').click();
         cy.get('div#inventory_container').should('be.visible');
     })
+
 });
+

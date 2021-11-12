@@ -70,4 +70,6 @@ describe('Add elements to cart', () => {
         cy.get('button#continue-shopping').click();
         cy.get('div#inventory_container').should('be.visible');
     })
+
 });
+
